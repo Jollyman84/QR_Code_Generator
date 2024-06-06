@@ -1,0 +1,109 @@
+body {
+	margin: 0px;
+}
+* {
+	font-family: 'Times New Roman', Georgia, Times, serif;
+}
+div.banner{
+	background-color: #0075FF;
+}
+h1.title {
+	text-align: center;
+	margin-top: 0px;
+	padding: 20px;
+	color: white;
+}
+div.union_block {
+	display: grid;
+	place-items: center;
+	grid-template-columns: auto auto;
+	column-gap: 40px;
+	align-items: stretch;
+}
+div.input_block {
+	width: 500px;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	margin-left: auto;
+}
+div.output_block {
+	width: auto;
+	display: grid;
+	grid-template-rows: auto auto;
+	margin-right: auto;
+}
+.radio-buttons {
+	margin-left: auto;
+	margin-right: auto;
+}
+.custom-radio {
+	display: inline-block;
+	margin-right: 20px;
+}
+.custom-radio input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+.custom-radio label {
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.custom-radio label:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 13px;
+	height: 13px;
+	border: 2px solid #0075FF;
+	border-radius: 50%;
+}
+  .custom-radio input[type="radio"]:checked + label:before {
+	background-color: #0075FF;
+}
+.custom-radio input[type="radio"]:hover + label:before {
+  background-color: #0075FF;
+}
+textarea.mess {
+	resize: none;
+	border-radius: 0px;
+	border-color: black;
+	font-size: 12pt;
+}
+h2 {
+	background-color: #0075FF;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+h2.instruct_1 {
+	margin-top: 0px;
+}
+h2.instruct_2 {
+	margin-top: 15px;
+}
+button {
+	background-color:#0075FF;
+	color: white;
+	text-align: center;
+	border: 0px;
+	padding: 10px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	font-size: 15px;
+}
+button.generate:hover {
+	background-color: #04AA6D;
+}
+canvas.code {
+	width: 500px;
+}
+button.download {
+	margin-top: auto;
+}
+button.download:hover {
+	background-color: red;
+}

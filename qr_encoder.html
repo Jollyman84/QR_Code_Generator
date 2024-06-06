@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR Code Generator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="banner">
+		<!--Add back/home button-->
+		<!--Consider adding qrcode to title-->
+		<h1 class="title">QR CODE GENERATOR</h1>
+	</div>
+
+	<div class="union_block">
+		<div class="input_block">
+			<h2 class="instruct_1">Select Correction Level</h2>
+	
+			<div class="radio-buttons">
+				<div class="custom-radio">
+					<input type="radio" id="radio1" checked="checked" name="radio" value="LOW">
+					<label for="radio1">LOW</label>
+					<span class="checkmark"></span>
+				</div>
+				<div class="custom-radio">
+					<input type="radio" id="radio2" name="radio" value="MEDIUM">
+					<label for="radio2">MEDIUM</label>
+					<span class="checkmark"></span>
+				</div>
+				<div class="custom-radio">
+					<input type="radio" id="radio3" name="radio" value="QUARTILE">
+					<label for="radio3">QUARTILE</label>
+					<span class="checkmark"></span>
+				</div>
+				<div class="custom-radio">
+					<input type="radio" id="radio4" name="radio" value="HIGH">
+					<label for="radio4">HIGH</label>
+					<span class="checkmark"></span>
+				</div>
+			</div>
+			
+			<h2 for="mess" class="instruct_2">Enter Information</h2>
+	
+			<textarea
+				id="mess"
+				class="mess"
+				rows="22"
+				placeholder="Try me out!"
+				maxlength="7089"></textarea>
+			
+			<button type="button" id="generate" class="generate">Generate QR Code</button>
+		</div>
+	
+		<div class="output_block">
+			<canvas id="canvas" class="code"></canvas>
+
+			<button type="button" id="download" class="download">Download</button>
+		</div>
+	</div>
+	
+	<script src="qr_encoder.js"></script>
+
+</body>
+</html>
