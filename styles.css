@@ -30,10 +30,15 @@ img.git {
 a.home {
 	margin: auto;
 	margin-left: 0px;
+	transition-duration: 0.4s;
+}
+a.home:hover, a.git:hover {
+	background-color: #2b8eff;
 }
 a.git {
 	margin: auto;
 	margin-right: 0px;
+	transition-duration: 0.4s;
 }
 div.union_block {
 	display: grid;
@@ -81,7 +86,7 @@ div.output_block {
 	border: 2px solid #0075FF;
 	border-radius: 50%;
 }
-  .custom-radio input[type="radio"]:checked + label:before {
+.custom-radio input[type="radio"]:checked + label:before {
 	background-color: #0075FF;
 }
 .custom-radio input[type="radio"]:hover + label:before {
