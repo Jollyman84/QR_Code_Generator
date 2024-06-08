@@ -6,12 +6,34 @@ body {
 }
 div.banner{
 	background-color: #0075FF;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-bottom: 20px;
 }
 h1.title {
 	text-align: center;
-	margin-top: 0px;
-	padding: 20px;
+	font-size: 50px;
+	margin: auto;
 	color: white;
+}
+img.home {
+	margin-right: auto;
+	padding: 20px;
+	height: 70px;
+}
+img.git {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	height: 70px;
+}
+a.home {
+	margin: auto;
+	margin-left: 0px;
+}
+a.git {
+	margin: auto;
+	margin-right: 0px;
 }
 div.union_block {
 	display: grid;
