@@ -1,3 +1,7 @@
+:root {
+	--backblue: #0075FF;
+}
+
 body {
 	margin: 0px;
 }
@@ -5,27 +9,27 @@ body {
 	font-family: 'Times New Roman', Georgia, Times, serif;
 }
 div.banner{
-	background-color: #0075FF;
+	background-color: var(--backblue);
 	display: grid;
 	grid-template-columns: auto auto auto;
 	margin-bottom: 20px;
 }
 h1.title {
 	text-align: center;
-	font-size: 50px;
+	font-size: clamp(22pt,50pt,min(50pt,5vw));
 	margin: auto;
 	color: white;
 }
+img.home, img.git {
+	padding: 20px;
+	height: clamp(50px, 70px, min(70px, 10vw));
+}
 img.home {
 	margin-right: auto;
-	padding: 20px;
-	height: 70px;
 }
 img.git {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 20px;
-	height: 70px;
 }
 a.home {
 	margin: auto;
@@ -43,21 +47,64 @@ a.git {
 div.union_block {
 	display: grid;
 	place-items: center;
-	grid-template-columns: auto auto;
-	column-gap: 40px;
-	align-items: stretch;
+	margin-bottom: 50px;
 }
 div.input_block {
-	width: 500px;
+	width: clamp(min(400px, 90vw), calc(50vw - 60px), 500px);
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
-	margin-left: auto;
 }
 div.output_block {
 	width: auto;
 	display: grid;
 	grid-template-rows: auto auto;
-	margin-right: auto;
+}
+@media only screen and (min-width: 901px) {
+	div.union_block {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		column-gap: 40px;
+	}
+	div.input_block {
+		margin-left: auto;
+	}
+	div.output_block {
+		margin-right: auto;
+	}
+	button.download {
+		margin-top: clamp(39px, calc(599px - 50vw), 139px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	div.union_block {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		row-gap: 40px;
+	}
+	div.input_block {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div.output_block {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	button.download {
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.radio-buttons {
+		display: grid;
+	    grid-template-columns: auto auto;
+		row-gap: 10px;
+	}
+}
+@media only screen and (min-width: 451px) {
+	.radio-buttons {
+		display: grid;
+	    grid-template-columns: auto auto auto auto;
+	}
 }
 .radio-buttons {
 	margin-left: auto;
@@ -83,14 +130,14 @@ div.output_block {
 	top: 0px;
 	width: 13px;
 	height: 13px;
-	border: 2px solid #0075FF;
+	border: 2px solid var(--backblue);
 	border-radius: 50%;
 }
 .custom-radio input[type="radio"]:checked + label:before {
-	background-color: #0075FF;
+	background-color: var(--backblue);
 }
 .custom-radio input[type="radio"]:hover + label:before {
-  background-color: #0075FF;
+  background-color: var(--backblue);
 }
 textarea.mess {
 	resize: none;
@@ -99,7 +146,7 @@ textarea.mess {
 	font-size: 12pt;
 }
 h2 {
-	background-color: #0075FF;
+	background-color: var(--backblue);
 	color: white;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -113,7 +160,7 @@ h2.instruct_2 {
 	margin-top: 15px;
 }
 button {
-	background-color:#0075FF;
+	background-color:var(--backblue);
 	color: white;
 	text-align: center;
 	border: 0px;
@@ -126,10 +173,7 @@ button.generate:hover {
 	background-color: #04AA6D;
 }
 canvas.code {
-	width: 500px;
-}
-button.download {
-	margin-top: auto;
+	width: clamp(min(400px, 90vw), calc(50vw - 60px), 500px);
 }
 button.download:hover {
 	background-color: red;
