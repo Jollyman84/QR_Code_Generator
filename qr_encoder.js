@@ -307,129 +307,47 @@ function alignment() {
 	let alignmentPoint;
 
 	switch(version) {
-		case '1':
-			alignmentPoint = [];
-			break;
-		case '2':
-			alignmentPoint = [6, 18];
-			break;
-		case '3':
-			alignmentPoint = [6, 22];
-			break;
-		case '4':
-			alignmentPoint = [6, 26];
-			break;
-		case '5':
-			alignmentPoint = [6, 30];
-			break;
-		case '6':
-			alignmentPoint = [6, 34];
-			break;
-		case '7':
-			alignmentPoint = [6, 22, 38];
-			break;
-		case '8':
-			alignmentPoint = [6, 24, 42];
-			break;
-		case '9':
-			alignmentPoint = [6, 26, 46];
-			break;
-		case '10':
-			alignmentPoint = [6, 28, 50];
-			break;
-		case '11':
-			alignmentPoint = [6, 30, 54];
-			break;
-		case '12':
-			alignmentPoint = [6, 32, 58];
-			break;
-		case '13':
-			alignmentPoint = [6, 34, 62];
-			break;
-		case '14':
-			alignmentPoint = [6, 26, 46, 66];
-			break;
-		case '15':
-			alignmentPoint = [6, 26, 48, 70];
-			break;
-		case '16':
-			alignmentPoint = [6, 26, 50, 74];
-			break;
-		case '17':
-			alignmentPoint = [6, 30, 54, 78];
-			break;
-		case '18':
-			alignmentPoint = [6, 30, 56, 82];
-			break;
-		case '19':
-			alignmentPoint = [6, 30, 58, 86];
-			break;
-		case '20':
-			alignmentPoint = [6, 34, 62, 90];
-			break;
-		case '21':
-			alignmentPoint = [6, 28, 50, 72, 94];
-			break;
-		case '22':
-			alignmentPoint = [6, 26, 50, 74, 98];
-			break;
-		case '23':
-			alignmentPoint = [6, 30, 54, 78, 102];
-			break;
-		case '24':
-			alignmentPoint = [6, 28, 54, 80, 106];
-			break;
-		case '25':
-			alignmentPoint = [6, 32, 58, 84, 110];
-			break;
-		case '26':
-			alignmentPoint = [6, 30, 58, 86, 114];
-			break;
-		case '27':
-			alignmentPoint = [6, 34, 62, 90, 118];
-			break;
-		case '28':
-			alignmentPoint = [6, 26, 50, 74, 98, 122];
-			break;
-		case '29':
-			alignmentPoint = [6, 30, 54, 78, 102, 126];
-			break;
-		case '30':
-			alignmentPoint = [6, 26, 52, 78, 104, 130];
-			break;
-		case '31':
-			alignmentPoint = [6, 30, 56, 82, 108, 134];
-			break;
-		case '32':
-			alignmentPoint = [6, 34, 60, 86, 112, 138];
-			break;
-		case '33':
-			alignmentPoint = [6, 30, 58, 86, 114, 142];
-			break;
-		case '34':
-			alignmentPoint = [6, 34, 62, 90, 118, 146];
-			break;
-		case '35':
-			alignmentPoint = [6, 30, 54, 78, 102, 126, 150];
-			break;
-		case '36':
-			alignmentPoint = [6, 24, 50, 76, 102, 128, 154];
-			break;
-		case '37':
-			alignmentPoint = [6, 28, 54, 80, 106, 132, 158];
-			break;
-		case '38':
-			alignmentPoint = [6, 32, 58, 84, 110, 136, 162];
-			break;
-		case '39':
-			alignmentPoint = [6, 26, 54, 82, 110, 138, 166];
-			break;
-		case '40':
-			alignmentPoint = [6, 30, 58, 86, 114, 142, 170];
-			break;
-		default:
-			alignmentPoint = []
-			break;
+		case '1':	alignmentPoint = []; break;
+		case '2':	alignmentPoint = [6, 18]; break;
+		case '3':	alignmentPoint = [6, 22]; break;
+		case '4':	alignmentPoint = [6, 26]; break;
+		case '5':	alignmentPoint = [6, 30]; break;
+		case '6':	alignmentPoint = [6, 34]; break;
+		case '7':	alignmentPoint = [6, 22, 38]; break;
+		case '8':	alignmentPoint = [6, 24, 42]; break;
+		case '9':	alignmentPoint = [6, 26, 46]; break;
+		case '10':	alignmentPoint = [6, 28, 50]; break;
+		case '11':	alignmentPoint = [6, 30, 54]; break;
+		case '12':	alignmentPoint = [6, 32, 58]; break;
+		case '13':	alignmentPoint = [6, 34, 62]; break;
+		case '14':	alignmentPoint = [6, 26, 46, 66]; break;
+		case '15':	alignmentPoint = [6, 26, 48, 70]; break;
+		case '16':	alignmentPoint = [6, 26, 50, 74]; break;
+		case '17':	alignmentPoint = [6, 30, 54, 78]; break;
+		case '18':	alignmentPoint = [6, 30, 56, 82]; break;
+		case '19':	alignmentPoint = [6, 30, 58, 86]; break;
+		case '20':	alignmentPoint = [6, 34, 62, 90]; break;
+		case '21':	alignmentPoint = [6, 28, 50, 72, 94]; break;
+		case '22':	alignmentPoint = [6, 26, 50, 74, 98]; break;
+		case '23':	alignmentPoint = [6, 30, 54, 78, 102]; break;
+		case '24':	alignmentPoint = [6, 28, 54, 80, 106]; break;
+		case '25':	alignmentPoint = [6, 32, 58, 84, 110]; break;
+		case '26':	alignmentPoint = [6, 30, 58, 86, 114]; break;
+		case '27':	alignmentPoint = [6, 34, 62, 90, 118]; break;
+		case '28':	alignmentPoint = [6, 26, 50, 74, 98, 122]; break;
+		case '29':	alignmentPoint = [6, 30, 54, 78, 102, 126]; break;
+		case '30':	alignmentPoint = [6, 26, 52, 78, 104, 130]; break;
+		case '31':	alignmentPoint = [6, 30, 56, 82, 108, 134]; break;
+		case '32':	alignmentPoint = [6, 34, 60, 86, 112, 138]; break;
+		case '33':	alignmentPoint = [6, 30, 58, 86, 114, 142]; break;
+		case '34':	alignmentPoint = [6, 34, 62, 90, 118, 146]; break;
+		case '35':	alignmentPoint = [6, 30, 54, 78, 102, 126, 150]; break;
+		case '36':	alignmentPoint = [6, 24, 50, 76, 102, 128, 154]; break;
+		case '37':	alignmentPoint = [6, 28, 54, 80, 106, 132, 158]; break;
+		case '38':	alignmentPoint = [6, 32, 58, 84, 110, 136, 162]; break;
+		case '39':	alignmentPoint = [6, 26, 54, 82, 110, 138, 166]; break;
+		case '40':	alignmentPoint = [6, 30, 58, 86, 114, 142, 170]; break;
+		default:	alignmentPoint = []; break;
 	}
 
 	for(let i = 0, a = alignmentPoint.length; i < a; i++) {
@@ -767,108 +685,40 @@ function versBlock() {
 	let block;
 	// Selects correct string for version
 	switch (version) {
-		case '7':
-			block = '000111110010010100';
-			break;
-		case '8':
-			block = '001000010110111100';
-			break;
-		case '9':
-			block = '001001101010011001';
-			break;
-		case '10':
-			block = '001010010011010011';
-			break;
-		case '11':
-			block = '001011101111110110';
-			break;
-		case '12':
-			block = '001100011101100010';
-			break;
-		case '13':
-			block = '001101100001000111';
-			break;
-		case '14':
-			block = '001110011000001101';
-			break;
-		case '15':
-			block = '001111100100101000';
-			break;
-		case '16':
-			block = '010000101101111000';
-			break;
-		case '17':
-			block = '010001010001011101';
-			break;
-		case '18':
-			block = '010010101000010111';
-			break;
-		case '19':
-			block = '010011010100110010';
-			break;
-		case '20':
-			block = '010100100110100110';
-			break;
-		case '21':
-			block = '010101011010000011';
-			break;
-		case '22':
-			block = '010110100011001001';
-			break;
-		case '23':
-			block = '010111011111101100';
-			break;
-		case '24':
-			block = '011000111011000100';
-			break;
-		case '25':
-			block = '011001000111100001';
-			break;
-		case '26':
-			block = '011010111110101011';
-			break;
-		case '27':
-			block = '011011000010001110';
-			break;
-		case '28':
-			block = '011100110000011010';
-			break;
-		case '29':
-			block = '011101001100111111';
-			break;
-		case '30':
-			block = '011110110101110101';
-			break;
-		case '31':
-			block = '011111001001010000';
-			break;
-		case '32':
-			block = '100000100111010101';
-			break;
-		case '33':
-			block = '100001011011110000';
-			break;
-		case '34':
-			block = '100010100010111010';
-			break;
-		case '35':
-			block = '100011011110011111';
-			break;
-		case '36':
-			block = '100100101100001011';
-			break;
-		case '37':
-			block = '100101010000101110';
-			break;
-		case '38':
-			block = '100110101001100100';
-			break;
-		case '39':
-			block = '100111010101000001';
-			break;
-		case '40':
-			block = '101000110001101001';
-			break;
+		case '7':	block = '000111110010010100'; break;
+		case '8':	block = '001000010110111100'; break;
+		case '9':	block = '001001101010011001'; break;
+		case '10':	block = '001010010011010011'; break;
+		case '11':	block = '001011101111110110'; break;
+		case '12':	block = '001100011101100010'; break;
+		case '13':	block = '001101100001000111'; break;
+		case '14':	block = '001110011000001101'; break;
+		case '15':	block = '001111100100101000'; break;
+		case '16':	block = '010000101101111000'; break;
+		case '17':	block = '010001010001011101'; break;
+		case '18':	block = '010010101000010111'; break;
+		case '19':	block = '010011010100110010'; break;
+		case '20':	block = '010100100110100110'; break;
+		case '21':	block = '010101011010000011'; break;
+		case '22':	block = '010110100011001001'; break;
+		case '23':	block = '010111011111101100'; break;
+		case '24':	block = '011000111011000100'; break;
+		case '25':	block = '011001000111100001'; break;
+		case '26':	block = '011010111110101011'; break;
+		case '27':	block = '011011000010001110'; break;
+		case '28':	block = '011100110000011010'; break;
+		case '29':	block = '011101001100111111'; break;
+		case '30':	block = '011110110101110101'; break;
+		case '31':	block = '011111001001010000'; break;
+		case '32':	block = '100000100111010101'; break;
+		case '33':	block = '100001011011110000'; break;
+		case '34':	block = '100010100010111010'; break;
+		case '35':	block = '100011011110011111'; break;
+		case '36':	block = '100100101100001011'; break;
+		case '37':	block = '100101010000101110'; break;
+		case '38':	block = '100110101001100100'; break;
+		case '39':	block = '100111010101000001'; break;
+		case '40':	block = '101000110001101001'; break;
 	}
 
 	function reader(c) {
